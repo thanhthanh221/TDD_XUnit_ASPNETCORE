@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{DFB4C89B
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CartTdd.Domain.Tests", "Tests\CartTdd.Domain.Tests\CartTdd.Domain.Tests.csproj", "{FA90C705-D604-4338-B66C-B3BE769E32FF}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CartTdd.Infrastructure", "Src\CartTdd.Infrastructure\CartTdd.Infrastructure.csproj", "{49124274-333C-4CD4-8271-F8FF3A6BBB93}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{FA90C705-D604-4338-B66C-B3BE769E32FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA90C705-D604-4338-B66C-B3BE769E32FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA90C705-D604-4338-B66C-B3BE769E32FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49124274-333C-4CD4-8271-F8FF3A6BBB93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49124274-333C-4CD4-8271-F8FF3A6BBB93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49124274-333C-4CD4-8271-F8FF3A6BBB93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49124274-333C-4CD4-8271-F8FF3A6BBB93}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,6 +38,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{AA77AC81-417F-4EAE-8CCB-E558A7F7BA3B} = {BBE7AC4D-00E4-4364-AD76-914BBB05246A}
 		{FA90C705-D604-4338-B66C-B3BE769E32FF} = {DFB4C89B-355D-4B72-9F53-4826BCFB09AE}
+		{49124274-333C-4CD4-8271-F8FF3A6BBB93} = {BBE7AC4D-00E4-4364-AD76-914BBB05246A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {747BF64D-B861-49F6-B653-6A792AE9B369}

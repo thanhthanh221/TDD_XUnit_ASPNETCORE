@@ -23,6 +23,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Src\CartTdd.Domain\CartTdd.Domain.csproj" />
+    <ProjectReference Include="..\..\Src\CartTdd.Infrastructure\CartTdd.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
