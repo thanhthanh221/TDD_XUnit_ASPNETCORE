@@ -4,10 +4,15 @@ namespace CartTdd.Domain.CartAggregate
 {
     public class Cart
     {
+        public Guid Id { get; private set; }
         public decimal TotalPrice => Products.Sum(p => p.TotalPrice) - (Coupon?.Amount).GetValueOrDefault(0);
         private readonly List<CartProduct> _products = new();
         public IReadOnlyList<CartProduct> Products => _products.AsReadOnly();
         public CartCoupon Coupon { get; set; }
+        public Cart(Guid id)
+        {
+            Id = id;
+        }
 
         public void AddProduct(CartProduct cartProduct)
         {
@@ -43,9 +48,6 @@ namespace CartTdd.Domain.CartAggregate
 
         public void ClearProducts() => _products.Clear();
 
-        public void ApplyCoupon(CartCoupon cartCoupon)
-        {
-            Coupon = cartCoupon;
-        }
+        public void ApplyCoupon(CartCoupon cartCoupon) => Coupon = cartCoupon;
     }
 }

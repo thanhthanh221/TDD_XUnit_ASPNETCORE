@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/Tests/CartTdd.Domain.Tests/CartTdd.Domain.Tests.csproj",
+                "${workspaceFolder}/CartTdd.Api/CartTdd.Api.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -19,7 +19,7 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/Tests/CartTdd.Domain.Tests/CartTdd.Domain.Tests.csproj",
+                "${workspaceFolder}/CartTdd.Api/CartTdd.Api.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -33,7 +33,7 @@
                 "watch",
                 "run",
                 "--project",
-                "${workspaceFolder}/Tests/CartTdd.Domain.Tests/CartTdd.Domain.Tests.csproj"
+                "${workspaceFolder}/CartTdd.Api/CartTdd.Api.csproj"
             ],
             "problemMatcher": "$msCompile"
         }
