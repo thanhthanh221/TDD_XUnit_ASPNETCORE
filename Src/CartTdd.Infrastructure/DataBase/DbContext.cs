@@ -5,8 +5,8 @@ using Microsoft.Extensions.Options;
 using MongoDB.Driver;
 
 [assembly: InternalsVisibleTo("CartTdd.Domain.Tests")]
+[assembly: InternalsVisibleTo("CartTdd.Api.Tests")]
 namespace CartTdd.Infrastructure.DataBase;
-
 public class DbContext
 {
     public MongoClient Client { get; set; }

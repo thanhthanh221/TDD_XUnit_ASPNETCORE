@@ -17,6 +17,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CartTdd.Api", "Src\CartTdd.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CartTdd.Api.Tests", "Tests\CartTdd.Api.Tests\CartTdd.Api.Tests.csproj", "{073024D3-1193-4453-9CE5-9CB8C71A61AB}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CartTdd.Application", "Src\CartTdd.Application\CartTdd.Application.csproj", "{922DB05E-E7F1-4A5A-B242-709AC9701CF5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +45,10 @@ Global
 		{073024D3-1193-4453-9CE5-9CB8C71A61AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{073024D3-1193-4453-9CE5-9CB8C71A61AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{073024D3-1193-4453-9CE5-9CB8C71A61AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{922DB05E-E7F1-4A5A-B242-709AC9701CF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{922DB05E-E7F1-4A5A-B242-709AC9701CF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{922DB05E-E7F1-4A5A-B242-709AC9701CF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{922DB05E-E7F1-4A5A-B242-709AC9701CF5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -53,6 +59,7 @@ Global
 		{49124274-333C-4CD4-8271-F8FF3A6BBB93} = {BBE7AC4D-00E4-4364-AD76-914BBB05246A}
 		{1CD5BFD6-3CE1-499E-9E70-E1182B1E3AD2} = {BBE7AC4D-00E4-4364-AD76-914BBB05246A}
 		{073024D3-1193-4453-9CE5-9CB8C71A61AB} = {DFB4C89B-355D-4B72-9F53-4826BCFB09AE}
+		{922DB05E-E7F1-4A5A-B242-709AC9701CF5} = {BBE7AC4D-00E4-4364-AD76-914BBB05246A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {747BF64D-B861-49F6-B653-6A792AE9B369}

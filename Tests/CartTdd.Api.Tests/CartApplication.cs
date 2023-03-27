@@ -1,15 +1,22 @@
 using Microsoft.AspNetCore.Mvc.Testing;
-using Microsoft.VisualStudio.TestPlatform.TestHost;
-using Xunit;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Hosting;
 
 namespace CartTdd.Api.Tests
 {
-    public class CartApplication : WebApplicationFactory<Program>
+    partial class CartApplication : WebApplicationFactory<Program>
     {
-        [Fact]
-        public void Test1()
+        protected override IHost CreateHost(IHostBuilder builder)
         {
-            Assert.True(true);
+            builder.ConfigureAppConfiguration(config =>
+            {
+                config.AddConfiguration(new ConfigurationBuilder().AddInMemoryCollection(new Dictionary<string, string>(){
+                    {"DbSettings:ConnectionString","mongodb://localhost:27017"},
+                    {"DbSettings:Database",$"cart-tdd"}
+                }).Build());
+            });
+            return base.CreateHost(builder);
         }
     }
 }
+

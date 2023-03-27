@@ -12,7 +12,7 @@ namespace CartTdd.Domain.Tests
 
         public CouponApplierTests()
         {
-            cart = new();
+            cart = new(Guid.NewGuid());
             cart.AddProduct(new CartProduct("SKU_1", 1, 100M));
             cart.AddProduct(new CartProduct("SKU_2", 2, 200M));
         }

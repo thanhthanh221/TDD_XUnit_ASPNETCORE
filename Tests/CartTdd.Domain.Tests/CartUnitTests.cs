@@ -10,7 +10,7 @@ namespace CartTdd.Domain.Tests
 
         public CartUnitTests()
         {
-            cart = new Cart();
+            cart = new Cart(Guid.NewGuid());
         }
 
         [Fact]
@@ -22,7 +22,7 @@ namespace CartTdd.Domain.Tests
 
         [Fact]
         public void Should_Succeed_When_AddProduct()
-        {
+        {   
             cart.AddProduct(new CartProduct("SKU_1", 1, 100M));
             cart.AddProduct(new CartProduct("SKU_2", 2, 200M));
 

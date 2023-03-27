@@ -11,7 +11,7 @@ namespace CartTdd.Domain.Tests
 
         public CouponApplierIntergrationTests(CouponApplierIntergrationTestsFixture fixture)
         {
-            cart = new();
+            cart = new(Guid.NewGuid());
             this.fixture = fixture;
             cart.AddProduct(new CartProduct("SKU_1", 1, 100M));
             cart.AddProduct(new CartProduct("SKU_2", 2, 200M));
@@ -20,7 +20,7 @@ namespace CartTdd.Domain.Tests
         [Fact]
         public async Task Should_Succeed_When_ApplyCoupon()
         {
-            await fixture.couponApplier.Apply("COUPON100",cart);
+            await fixture.couponApplier.Apply("COUPON100", cart);
 
             Assert.Equal(400M, cart.TotalPrice);
             Assert.Equal("COUPON100", cart.Coupon.Code);
